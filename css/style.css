@@ -147,3 +147,89 @@ header{
     min-height: 300px;
     background-color: yellow;
 }
+
+.operations{
+    width: 100%;
+    min-height: 1200px;
+    background-color: chartreuse;
+}
+
+.operations h1,
+.adv h1{
+    font-size: 2.7rem;
+    margin-bottom: 2em;
+}
+
+.operations .row{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.operations .col{
+    width: 30%;
+    height: 450px;
+    background-color: red;
+}
+
+.adv{
+    width: 60%;
+    height: 300px;
+    background-color: blueviolet;
+    margin: 150px 0;
+}
+
+.flex-grid{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.flex-grid .text{
+    width: calc(100% / 3);
+    height: 500px;
+    background-color: gray;
+}
+
+.flex-img-left,
+.flex-img-right{
+    width: calc(100% / 3);
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-img-left *,
+.flex-img-right *{
+    width: calc(100% / 2);
+    height: 250px;
+    border: 3px solid red;
+    background-color: aqua;
+}
+
+.free-try{
+    width: 100%;
+    background-color: rosybrown;
+}
+
+.flex-try{
+    width: 60%;
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-try h1{
+    font-size: 2.7rem;
+    width: 50%;
+    background-color: royalblue;
+}
+
+.flex-try .button{
+    width: 25%;
+    height: 50px;
+    background-color: blueviolet;
+}
