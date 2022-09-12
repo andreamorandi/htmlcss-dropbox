@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin-top: 7em;
+}
+
+header{
+    width: 100%;
+    height: 7em;
+    position: fixed;
+    top: 0;
+    background-color: bisque;
+}
+
+.flex-header{
+    width: 95%;
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.left-header,
+.right-header{
+    width: 25%;
+    height: 4em;
+    background-color: blue;
+}
+
+.jumbo h1{
+    font-size: 6rem;
+}
+
+.jumbo{
+    background-color: cyan;
+    width: 100%;
+    min-height: 600px;
+}
+
+.flex-jumbo{
+    width: 70%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+.jumbo-text{
+    width: 35%;
+    min-height: 300px;
+    background-color: chartreuse;
+}
+
+.container{
+    width: 60%;
+    min-height: 3000px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.plan .plan-select{
+    width: 100%;
+    min-height: 500px;
+    background-color: blueviolet;
+}
+
+.plan .plan-select h1{
+    padding-top: 200px;
+    font-size: 3rem;
+}
+
+.plan .row{
+    width: 100%;
+    min-height: 1000px;
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: thistle;
+}
+
+.plan .col{
+    width: 30%;
+    min-height: 1000px;
+    background-color: mediumvioletred;
+}
+
+.enterprise{
+    width: 100%;
+    min-height: 300px;
+    background-color: dimgrey;
+}
+
+.flex-ent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 150px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.flex-ent .title{
+    background-color: aqua;
+}
+
+.flex-ent .button{
+    width: 30%;
+    min-height: 50px;
+    background-color: blue;
+}
+
+.partner{
+    width: 100%;
+    min-height: 500px;
+    margin: 200px 0;
+    background-color: brown;
+}
+
+.flex-partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.partner-img{
+    width: 55%;
+    min-height: 500px;
+    background-color: cyan;
+}
+
+.partner-text{
+    width: 40%;
+    min-height: 300px;
+    background-color: yellow;
+}
