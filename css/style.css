@@ -1,41 +1,75 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES */
+:root{
+    --header-height: 6em;
+}
+/* COMMON */
 html{
     font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    margin-top: 7em;
+    margin-top: var(--header-height);
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* HEADER */
 header{
     width: 100%;
-    height: 7em;
+    height: var(--header-height);
     position: fixed;
     top: 0;
-    background-color: bisque;
+    background-color: white;
 }
 
 .flex-header{
-    width: 95%;
-    height: 7em;
+    width: 98%;
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
-.left-header,
-.right-header{
-    width: 25%;
-    height: 4em;
-    background-color: blue;
+.flex-header ul{
+    display: flex;
+    align-items: center;
 }
 
+.flex-header li{
+    padding: 0.6em 1.2em;
+}
+
+.header-left img{
+    width: 120%;
+    vertical-align: middle;
+}
+
+.header-left li:nth-child(2){
+    margin-left: 1.2em;
+}
+
+.header-right li:last-child{
+    margin-left: 0.6em;
+    color: white;
+    background-color: #0061ff;
+}
+
+/* JUMBOTRON */
 .jumbo h1{
     font-size: 6rem;
 }
@@ -63,7 +97,7 @@ header{
 }
 
 .container{
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
     background-color: aquamarine;
 }
@@ -279,7 +313,7 @@ footer{
 }
 
 .footer-container{
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
