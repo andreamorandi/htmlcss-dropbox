@@ -22,7 +22,6 @@ html{
 .container-small{
     max-width: 60%;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 img :not(.header, .jumbo){
@@ -34,7 +33,8 @@ body{
 }
 
 p,
-a{
+a,
+span{
     font-size: 1.1rem;
 }
 
@@ -42,6 +42,11 @@ a{
     display: inline-block;
     text-decoration: none;
     color: inherit;
+}
+
+.a-underline{
+    text-decoration: underline;
+    color: #0000ee;
 }
 
 ul{
@@ -54,6 +59,8 @@ header{
     height: var(--header-height);
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 999;
     background-color: white;
 }
 
@@ -144,38 +151,92 @@ header{
 }
 
 /* PLAN */
-.plan .plan-select{
-    width: 100%;
-    min-height: 500px;
-    background-color: blueviolet;
+#plan .plan-select{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
 }
 
-.plan .plan-select h1{
-    padding-top: 200px;
+#plan h1{
+    padding: 3em 0 1.5em 0;
     font-size: 3rem;
 }
 
-.plan .row{
+.plan-select input{
+    transform: scale(2);
+    width: 2rem;
+    background-color: blue;
+}
+
+#plan .row{
     width: 100%;
     min-height: 1000px;
-    margin: 150px 0;
+    margin: 70px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: thistle;
+    flex-wrap: wrap;
 }
 
-.plan .col{
+#plan .col{
     width: 30%;
     min-height: 1000px;
-    background-color: mediumvioletred;
+    border: 1px solid #d0d0d3;
 }
 
-.enterprise{
+#plan .col-big{
     width: 100%;
     min-height: 300px;
+    border: 1px solid #d0d0d3;
     background-color: dimgrey;
 }
+
+.col .button{
+    width: 95%;
+    padding: 0.8em 0;
+    margin: 2em 0;
+    text-align: center;
+    color: white;
+    background-color: #0061ff;
+}
+
+.col-head{
+    text-align: center;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.col-cont{
+    padding: 2em 1em;
+}
+
+.col-cont h2{
+    padding-bottom: 1em;
+}
+
+.col-cont h4{
+    padding-bottom: 0.5em;
+}
+
+.col-cont .period{
+    padding-bottom: 3em;
+    color: #66686b;
+}
+
+.flex-icon{
+    display: flex;
+    padding-bottom: 1.5em;
+}
+
+.flex-icon i{
+    padding: 0.2em 0.5em 0 0;
+    font-size: 1.2rem;
+}
+
+.flex-icon span{
+    width: 90%;
+}
+
 
 .flex-ent{
     display: flex;
@@ -194,6 +255,11 @@ header{
     width: 30%;
     min-height: 50px;
     background-color: blue;
+}
+
+.span-border{
+    padding-bottom: 3em;
+    border-bottom: 1px solid #d0d0d3;
 }
 
 .partner{
