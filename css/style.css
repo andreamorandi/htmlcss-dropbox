@@ -24,7 +24,7 @@ html{
     margin: 0 auto;
 }
 
-img :not(.header, .jumbo){
+img{
     max-width: 100%;
 }
 
@@ -36,6 +36,10 @@ p,
 a,
 span{
     font-size: 1.1rem;
+}
+
+h2{
+    font-size: 1.6rem;
 }
 
 a{
@@ -84,6 +88,7 @@ header{
 
 .header-left img{
     width: 120%;
+    max-width: none;
     vertical-align: middle;
 }
 
@@ -127,10 +132,11 @@ header{
     padding-bottom: 6em;
 }
 
-.jumbo-content a:nth-child(2){
+.jumbo-content a:first-of-type{
     width: 60%;
     padding: 1em;
     margin: 2em 0 2em 0;
+    text-align: center;
     color: white;
     background-color: #0061ff;
 }
@@ -140,6 +146,7 @@ header{
     top: 0;
     left: 100%;
     width: 200%;
+    max-width: none;
 }
 
 .jumbo-content i{
@@ -158,8 +165,8 @@ header{
 }
 
 #plan h1{
+    font-size: 2.8rem;
     padding: 3em 0 1.5em 0;
-    font-size: 3rem;
 }
 
 .plan-select input{
@@ -170,25 +177,21 @@ header{
 
 #plan .row{
     width: 100%;
-    min-height: 1000px;
     margin: 70px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 #plan .col{
     width: 30%;
-    min-height: 1000px;
     border: 1px solid #d0d0d3;
 }
 
 #plan .col-big{
     width: 100%;
-    min-height: 300px;
+    margin-top: 3em;
     border: 1px solid #d0d0d3;
-    background-color: dimgrey;
 }
 
 .col .button{
@@ -207,14 +210,19 @@ header{
 }
 
 .col-cont{
-    padding: 2em 1em;
+    padding: 2em 1.5em;
+}
+
+.col-cont a, 
+.col-cont span{
+    font-size: 1rem;
 }
 
 .col-cont h2{
     padding-bottom: 1em;
 }
 
-.col-cont h4{
+.col-cont h4:first-of-type{
     padding-bottom: 0.5em;
 }
 
@@ -233,28 +241,38 @@ header{
     font-size: 1.2rem;
 }
 
-.flex-icon span{
-    width: 90%;
+.col-cont h4:last-of-type{
+    padding: 7em 0 2em 0;
 }
 
+.flex-icon .fa-check{
+    color: #0061ff;
+}
 
 .flex-ent{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    min-height: 150px;
-    padding: 50px;
+    padding: 2em;
     margin: 0 auto;
 }
 
-.flex-ent .title{
-    background-color: aqua;
+.flex-ent a, 
+.flex-ent p{
+    font-size: 1rem;
 }
 
-.flex-ent .button{
-    width: 30%;
-    min-height: 50px;
-    background-color: blue;
+.flex-ent .button-ent{
+    width: calc(28.5%);
+    padding: 0.8em 0;
+    text-align: center;
+    color: white;
+    background-color: #0061ff;
+}
+
+.flex-ent h4{
+    padding: 1em 0 3em 0;
 }
 
 .span-border{
@@ -262,11 +280,10 @@ header{
     border-bottom: 1px solid #d0d0d3;
 }
 
-.partner{
+/* PARTNER */
+#partner{
     width: 100%;
-    min-height: 500px;
-    margin: 200px 0;
-    background-color: brown;
+    padding: 5em 0 10em 0;
 }
 
 .flex-partner{
@@ -277,43 +294,56 @@ header{
     height: 500px;
 }
 
-.partner-img{
-    width: 55%;
-    min-height: 500px;
-    background-color: cyan;
+.flex-partner img{
+    width: 62%;
 }
 
 .partner-text{
-    width: 40%;
-    min-height: 300px;
-    background-color: yellow;
+    width: 33%;
 }
 
-.operations{
+.partner-text p{
+    padding: 1em 0 2em 0;
+}
+
+.partner-text .button-partner{
+    padding: 0.8em 1em;
+    border: 1px solid black;
+}
+
+/* OPERATIONS */
+#operations{
     width: 100%;
-    min-height: 1200px;
-    background-color: chartreuse;
 }
 
-.operations h1,
-.adv h1{
-    font-size: 2.7rem;
-    margin-bottom: 2em;
-}
-
-.operations .row{
+#operations .row{
     width: 100%;
-    height: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.operations .col{
+#operations .col{
     width: 30%;
-    height: 450px;
-    background-color: red;
 }
+
+#operations h1{
+    font-size: 2.5rem;
+    padding-bottom: 1.3em;
+}
+
+#operations h2{
+    padding: 0.5em 0 0.8em 0;
+}
+
+#operations p{
+    font-size: 1.05rem;
+}
+
+#operations .row div:nth-child(n+4){
+    margin-top: 3.5em;
+}
+
 
 .adv{
     width: 60%;
