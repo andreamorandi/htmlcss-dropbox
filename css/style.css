@@ -80,10 +80,14 @@ header{
 .flex-header ul{
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .flex-header li{
+    display: flex;
+    align-items: center;
     padding: 0.6em 1.2em;
+    height: 100%;
 }
 
 .header-left img{
@@ -100,6 +104,24 @@ header{
     margin-left: 0.6em;
     color: white;
     background-color: #0061ff;
+    height: unset;
+}
+
+.header-right li:hover{
+    border-bottom: 2px solid black;
+}
+
+.header-right li:last-child:hover{
+    border: none;
+    background-color: rgba(0, 97, 255, 0.75);
+}
+
+.header-left li:hover{
+    border-bottom: 2px solid black;
+}
+
+.header-left li:first-child:hover{
+    border: none;
 }
 
 /* JUMBOTRON */
@@ -141,6 +163,10 @@ header{
     background-color: #0061ff;
 }
 
+.jumbo-content a:first-of-type:hover{
+    background-color: rgba(0, 97, 255, 0.75);
+}
+
 .jumbo-content img{
     position: absolute;
     top: 0;
@@ -156,22 +182,56 @@ header{
     font-weight: 800;
 }
 
+.jumbo-content a:last-of-type:hover{
+    text-decoration: underline;
+}
+
 /* PLAN */
 #plan h1{
     font-size: 2.8rem;
     padding: 3em 0 1.5em 0;
 }
 
-.plan-select .bill{
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.bill{
+    position: relative;
     display: inline-block;
     padding-right: 2.5em;
 }
-
-.plan-select input{
-    transform: scale(2);
-    width: 2rem;
+  
+.bill input[type="radio"] {
+    display: none;
 }
 
+.bill label:before {
+content: "";
+position: relative;
+top: 5px;
+left: 0;
+display: inline-block;
+border-radius: 50%;
+width: 22px;
+height: 22px;
+margin-right: 5px;
+border: 2.5px solid #d0d0d3;
+}
+
+.bill input[type="radio"]:checked + label:after {
+content: "";
+position: absolute;
+top: 5px;
+left: 0;
+display: inline-block;
+border-radius: 50%;
+width: 22px;
+height: 22px;
+border: 5.5px solid #0061ff;
+}
+  
 #plan .row{
     width: 100%;
     margin: 70px 0;
@@ -198,6 +258,10 @@ header{
     text-align: center;
     color: white;
     background-color: #0061ff;
+}
+
+.col .button:hover{
+    background-color: rgba(0, 97, 255, 0.75);
 }
 
 .col-head{
@@ -268,6 +332,10 @@ header{
     background-color: #0061ff;
 }
 
+.flex-ent .button-ent:hover{
+    background-color: rgba(0, 97, 255, 0.75);
+}
+
 .flex-ent h4{
     padding: 1em 0 3em 0;
 }
@@ -306,6 +374,12 @@ header{
 .partner-text .button-partner{
     padding: 0.8em 1em;
     border: 1px solid black;
+}
+
+.partner-text .button-partner:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: white;
 }
 
 /* OPERATIONS */
@@ -463,6 +537,11 @@ header{
     background-color: white;
 }
 
+.flex-try .button-try:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* QUESTIONS */
 .questions{
     width: 100%;
@@ -540,6 +619,10 @@ footer hr{
 
 footer .col a{
     padding-bottom: 1em;
+}
+
+footer .col a:hover{
+    text-decoration: underline;
 }
 
 footer .language >*{
