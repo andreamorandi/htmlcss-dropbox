@@ -503,13 +503,12 @@ header{
 /* FOOTER */
 footer{
     width: 100%;
-    height: 620px;
+    padding: 6em 0 2em 0;
     background-color: black;
 }
 
 footer .row{
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -517,14 +516,29 @@ footer .row{
 
 footer .col{
     width: calc(100% / 6);
-    height: 300px;
-    background-color: yellow;
+    color: white;
 }
 
-footer .language{
+footer h3{
+    font-size: 1.6rem;
+    padding-bottom: 1em;
+}
+
+footer hr{
     width: 10%;
-    height: 20px;
-    padding: 50px;
-    border-top: solid white;
-    background-color: blueviolet;
+    border: 1px solid white;
+    margin: 6em 0 3em 0;
+}
+
+footer .col a{
+    padding-bottom: 1em;
+}
+
+footer .language >*{
+    padding: 0.1em;
+    color: #999999;
+}
+
+.language .fa-caret-up{
+    vertical-align: text-bottom;
 }
